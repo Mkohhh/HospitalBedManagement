@@ -1,0 +1,49 @@
+.register{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 140%;
+    background-color: #fff;
+    max-width: 700px;
+    height: auto;
+    margin: auto;
+    margin-top: 100px;
+    padding: 50px 70px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 10px 10px 10px rgba(96, 141, 141, 0.075);
+}
+
+.item{
+    text-align: center;
+    width: 300px;
+    border-color: rgb(176, 231, 239);
+    border-style: solid;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    padding: 11px;
+  }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.register-button {
+  border-radius: 30px;
+  padding: 10px 20px;
+  width: 150px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #5791ff;
+  border: none;
+  color: white;
+  margin-top: 20px;
+}
+
+.register-button:active {
+  background-color: #5792ffb6;
+}
