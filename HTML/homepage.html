@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pinevalley Hospital</title>
+    <link rel="shortcut icon" href="/Pictures/favicon.ico">
+    <link rel="stylesheet" href="/CSS/homepage_banner1.css">
+    <Link rel="stylesheet" href="/CSS/body.css">
+    <Link rel="stylesheet" href="/CSS/register.css">
+	<Link rel="stylesheet" href="/CSS/simulationSection.css">
+	<Link rel="stylesheet" href="/CSS/bedWardSection.css">	
+	
+      
+  </head>
+
+    <body>
+      <div class="header">
+        <div class="left-section">
+          <img class="logo" src="/Pictures/Hospital_Logo2.jpg">
+        </div>
+
+       <div class="right-section">
+        <a href="#db"><img class="dashboardicon" src="/Pictures/dashboardicon2.jpg">Dashboard</a>
+        <a href="#rg"><img class="register1" src="/Pictures/register.png">Register Patient</a>
+        <a href="#bw"><img class="GeneralWard" src="/Pictures/general-ward.png">General Ward</a>
+        <a href="#bw"><img class="InfectiousWard" src="/Pictures/infectious-disease.png">Infectious Disease Ward</a>
+        <a href="#icuw"><img class="IntensiveWard" src="/Pictures/intensive-care.png">Intensive Care Ward</a>
+       </div>
+      </div>
+
+     
+		
+    
+
+      <div class="register" id="rg">
+        <form id="patient-admission-form">
+          <p class="r-title">Patient Registration Form</p>
+          <hr>
+			  <div>
+				<label for="patientID">ID: </label>
+				<input type="text" id="patient-ID" class="item" required>
+			  </div>
+              <div> 
+                  <label for="Name">Name:</label>
+                  <input type="text" id="patient-name" class="item" placeholder="Name" max="18" required>
+              </div>
+              <div>
+                  <label for="gender">Gender:</label>
+                  <select class="item" id="patient-gender" required>
+                      <option selected>Gender</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                  </select>
+              </div>
+              <div>
+                  <label for="dob">Date of Birth:</label>
+                  <input type="date" class="item" id="patient-DOB" placeholder="Birth Date" required>
+			  </div>
+              <div>
+                  <label for="blood-group">Blood Group:</label>
+                  <select class="item" id="patient-bloodType" required>
+                      <option selected>Blood Group</option>
+                      <option value="O-">O-</option>
+                      <option value="A-">A-</option>
+                      <option value="B-">B-</option>
+                      <option value="AB-">AB-</option>
+                      <option value="O+">O+</option>
+                      <option value="A+">A+</option>
+                      <option value="B+">B+</option>
+                      <option value="AB+">AB+</option>                
+                  </select>
+              </div>
+              <div>
+                  <label for="ward">Ward Type:</label>
+                  <select class="item" id="patient-category" required>
+                      <option value="General Care">General</option>
+                      <option value="Infectious Disease">Infectious Disease</option>
+                      <option value="Intensive Care">Intensive Care</option>
+                  </select>
+              </div>
+              <div>
+                <button type="submit" class="register-button">Register</button>
+              </div>
+      </form>
+      </div>
+
+	  <div class=dashboard id="db">Dashboard:
+		<div class="patient-status"></div>
+		  <div class="scrollable-list">
+			  <div class="simulation-waiting-list">
+				  <ul></ul>
+			  </div>
+		  </div>
+	  </div>
+
+
+	  <section id="icuw" class="bed-ward-section">
+        <!-- Bed Ward Generator  -->
+      </section>
+
+	  <h2 id="bw"></h2>
+  </body>
+
+  <script src="/JS/indexedDB.js"></script>
+  <script src="/JS/bedManagement.js"></script>
+  <script src="/JS/patientManagement.js"></script>
+  <script src="/JS/bedElement.js"></script>
+  <script src="/JS/dashboard.js"></script>
+
+  
+</html>
+
+
+
