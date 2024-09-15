@@ -7,7 +7,7 @@ This system aims to provide real-time online information for bed management of a
 # Set-Up guide
 1. Ensure node.js is installed on local machine.
 2. Extract zip file to desired directory.
-3. Open a terminal in a text/code editor and navigate to location of extracted folder eg. `cd C:\Users\Marcus\Documents\HospitalV3`.
+3. Open a terminal in a text/code editor (Such as Visual Studio Code) and navigate to location of extracted folder eg. `cd C:\Users\Marcus\Documents\HospitalBedManagement-main`.
 4. Once inside directory, key in `node server.js`. There should show `Server is running on port:8080`, meaning the server has started.
 5. Open up a browser (preferably google chrome), and run `http://localhost:8080`.
 
